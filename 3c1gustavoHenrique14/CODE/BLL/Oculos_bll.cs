@@ -15,7 +15,7 @@ namespace _3c1gustavoHenrique14.CODE.BLL
 
         public void Inserir(Oculos_dto request)
         {
-            string inserir = $"insert into {tabela} values(null,'{request.Nome}',{request.Preco})";
+            string inserir = $"insert into {tabela} values(null,'{request.Modelo}',{request.Preco})";
             conexao.ExecutarComando(inserir);
         }
 
@@ -27,7 +27,7 @@ namespace _3c1gustavoHenrique14.CODE.BLL
 
         public void Editar(Oculos_dto request)
         {
-            string alterar = $"update {tabela} set modelo = '{request.Modelo}', preco = {request.Preco} where id = {request.Id};";
+            string alterar = $"update {tabela} set Modelo = '{request.Modelo}', preco = {request.Preco} where id = {request.Id};";
             conexao.ExecutarComando(alterar);
         }
 
