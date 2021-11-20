@@ -106,6 +106,7 @@
             this.btn_inserir.TabIndex = 7;
             this.btn_inserir.Text = "Inserir";
             this.btn_inserir.UseVisualStyleBackColor = true;
+            this.btn_inserir.Click += new System.EventHandler(this.btn_inserir_Click_1);
             // 
             // btn_atualizar
             // 
@@ -115,6 +116,7 @@
             this.btn_atualizar.TabIndex = 9;
             this.btn_atualizar.Text = "Atualizar";
             this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click_1);
             // 
             // btn_deletar
             // 
@@ -124,6 +126,7 @@
             this.btn_deletar.TabIndex = 10;
             this.btn_deletar.Text = "Deletar";
             this.btn_deletar.UseVisualStyleBackColor = true;
+            this.btn_deletar.Click += new System.EventHandler(this.btn_deletar_Click_1);
             // 
             // btn_listar
             // 
@@ -133,6 +136,7 @@
             this.btn_listar.TabIndex = 11;
             this.btn_listar.Text = "Listar";
             this.btn_listar.UseVisualStyleBackColor = true;
+            this.btn_listar.Click += new System.EventHandler(this.btn_listar_Click_1);
             // 
             // Form1
             // 
@@ -152,6 +156,7 @@
             this.Controls.Add(this.label_id);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_view)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

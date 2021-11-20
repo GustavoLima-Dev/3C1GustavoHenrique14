@@ -4,7 +4,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _3c1gustavoHenrique14.CODE.DTO;
+using _3c1gustavoHenrique14.Code.DTO;
+using _3c1gustavoHenrique14.CODE.DAL;
 
 namespace _3c1gustavoHenrique14.CODE.BLL
 {
@@ -27,12 +28,12 @@ namespace _3c1gustavoHenrique14.CODE.BLL
 
         public void Editar(Oculos_dto request)
         {
-            string alterar = $"update {tabela} set Modelo = '{request.Modelo}', preco = {request.Preco} where id = {request.Id};";
+            string alterar = $"update {tabela} set modelo = '{request.Modelo}', preco = {request.Preco} where id = {request.Id};";
             conexao.ExecutarComando(alterar);
         }
 
 
-        public void Excluir(OculosDTO request)
+        public void Excluir(Oculos_dto request)
         {
             string excluir = $"delete from {tabela} where id = '{request.Id}';";
             conexao.ExecutarComando(excluir);

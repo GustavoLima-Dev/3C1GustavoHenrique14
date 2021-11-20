@@ -70,7 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CODE\BLL\Oculos_bll.cs" />
-    <Compile Include="CODE\BLL\produto.cs" />
     <Compile Include="CODE\DAL\Conexao.cs" />
     <Compile Include="CODE\DTO\Oculos_dto.cs" />
     <Compile Include="Form1.cs">
